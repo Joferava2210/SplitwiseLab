@@ -11,6 +11,12 @@
 		8A1118772614131800BDA4A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1118762614131800BDA4A0 /* ContentView.swift */; };
 		8A1118792614131A00BDA4A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1118782614131A00BDA4A0 /* Assets.xcassets */; };
 		8A11187C2614131A00BDA4A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A11187B2614131A00BDA4A0 /* Preview Assets.xcassets */; };
+		8A1118852614141500BDA4A0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1118842614141500BDA4A0 /* LoginView.swift */; };
+		8A11188F2614172600BDA4A0 /* InfoDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A11188D2614172600BDA4A0 /* InfoDataModel.xcdatamodeld */; };
+		8A1118922614196200BDA4A0 /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1118912614196200BDA4A0 /* AddContactView.swift */; };
+		8A11189526141EA100BDA4A0 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11189426141EA100BDA4A0 /* CoreDataManager.swift */; };
+		8A111898261420D000BDA4A0 /* CoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A111897261420D000BDA4A0 /* CoreDataViewModel.swift */; };
+		8A1118A0261A8E8500BDA4A0 /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11189F261A8E8400BDA4A0 /* ContactDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		8A1118782614131A00BDA4A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A11187B2614131A00BDA4A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A11187D2614131A00BDA4A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A1118842614141500BDA4A0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8A11188E2614172600BDA4A0 /* InfoDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InfoDataModel.xcdatamodel; sourceTree = "<group>"; };
+		8A1118912614196200BDA4A0 /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
+		8A11189426141EA100BDA4A0 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		8A111897261420D000BDA4A0 /* CoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewModel.swift; sourceTree = "<group>"; };
+		8A11189F261A8E8400BDA4A0 /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +64,16 @@
 		8A1118732614131800BDA4A0 /* SplitwiseLab */ = {
 			isa = PBXGroup;
 			children = (
+				8A11188C261416AC00BDA4A0 /* Managers */,
+				8A11188B2614169F00BDA4A0 /* Data */,
+				8A11188A2614168800BDA4A0 /* ViewModels */,
+				8A1118892614166E00BDA4A0 /* Views */,
 				8A1118742614131800BDA4A0 /* SplitwiseLabApp.swift */,
 				8A1118762614131800BDA4A0 /* ContentView.swift */,
 				8A1118782614131A00BDA4A0 /* Assets.xcassets */,
 				8A11187D2614131A00BDA4A0 /* Info.plist */,
 				8A11187A2614131A00BDA4A0 /* Preview Content */,
+				8A1118842614141500BDA4A0 /* LoginView.swift */,
 			);
 			path = SplitwiseLab;
 			sourceTree = "<group>";
@@ -67,6 +84,39 @@
 				8A11187B2614131A00BDA4A0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8A1118892614166E00BDA4A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A1118912614196200BDA4A0 /* AddContactView.swift */,
+				8A11189F261A8E8400BDA4A0 /* ContactDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A11188A2614168800BDA4A0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8A111897261420D000BDA4A0 /* CoreDataViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8A11188B2614169F00BDA4A0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8A11188D2614172600BDA4A0 /* InfoDataModel.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8A11188C261416AC00BDA4A0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8A11189426141EA100BDA4A0 /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1118A0261A8E8500BDA4A0 /* ContactDetailsView.swift in Sources */,
+				8A11189526141EA100BDA4A0 /* CoreDataManager.swift in Sources */,
+				8A1118852614141500BDA4A0 /* LoginView.swift in Sources */,
+				8A111898261420D000BDA4A0 /* CoreDataViewModel.swift in Sources */,
+				8A1118922614196200BDA4A0 /* AddContactView.swift in Sources */,
+				8A11188F2614172600BDA4A0 /* InfoDataModel.xcdatamodeld in Sources */,
 				8A1118772614131800BDA4A0 /* ContentView.swift in Sources */,
 				8A1118752614131800BDA4A0 /* SplitwiseLabApp.swift in Sources */,
 			);
@@ -328,6 +384,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8A11188D2614172600BDA4A0 /* InfoDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8A11188E2614172600BDA4A0 /* InfoDataModel.xcdatamodel */,
+			);
+			currentVersion = 8A11188E2614172600BDA4A0 /* InfoDataModel.xcdatamodel */;
+			path = InfoDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8A1118692614131800BDA4A0 /* Project object */;
 }
